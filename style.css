@@ -91,6 +91,10 @@ nav.container .fix > button {
   border: none;
 }
 
+nav.container .fix .navList ul .btn_in {
+  display: none;
+}
+
 nav.container i {
   font-size: 2rem;
   color: #fff;
@@ -322,7 +326,43 @@ footer span + ul {
   }
 
   nav.container .fix .navList {
+    position: absolute;
+    top: 12%;
+    right: 9%;
     display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    transition: 0.3s ease;
+  }
+
+  nav.container .fix .navList ul {
+    width: 67vw;
+    flex-direction: column;
+    color: var(--Dark-desaturated-cyan);
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+  }
+
+  nav.container .fix .navList.active {
+    display: flex;
+  }
+
+  nav.container .fix .navList.active button {
+    display: none;
+  }
+
+  nav.container .fix .navList ul .btn_in {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 0.7rem 1.3rem;
+    border-radius: 100px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--Yellow);
   }
 
   .main_hero h1 {
